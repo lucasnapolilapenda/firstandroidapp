@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.codelabs.mdc.java.shrine.R;
 
-public class MainActivity extends AppCompatActivity implements Calculations {
+public class MainActivity extends AppCompatActivity  {
     TextView boxAccount;
     TextView boxHand;
     Button depositBtn;
@@ -33,22 +33,14 @@ public class MainActivity extends AppCompatActivity implements Calculations {
 
     }
 
-    @Override
-    public int [] transaction(int des, int src, int tran) {
-        int [] arr = {des,src};
-        if (src>=tran && src>1000) {
-            arr[0] = des + tran;
-            arr[1] = src - tran;
-        }
-        return arr;
-    }
+
 
     public void onClickDeposit (View view) {
         int trans = Integer.parseInt(transaction.getSelectedItem().toString());
         int acc = Integer.parseInt(boxAccount.getText().toString());
         int hand = Integer.parseInt(boxHand.getText().toString());
 
-        int [] arr = transaction(acc, hand, trans);
+        int [] arr = new Deposit().transaction(acc, hand, trans);
         boxAccount.setText(arr[0] + "");
         boxHand.setText(arr[1] + "");
     }
@@ -59,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements Calculations {
         int acc = Integer.parseInt(boxAccount.getText().toString());
         int hand = Integer.parseInt(boxHand.getText().toString());
 
-        int [] arr = transaction(hand, acc, trans);
+        int [] arr = new Withdrawal().transaction(hand, acc, trans);
         boxAccount.setText(arr[1] + "");
         boxHand.setText(arr[0] + "");
     }
