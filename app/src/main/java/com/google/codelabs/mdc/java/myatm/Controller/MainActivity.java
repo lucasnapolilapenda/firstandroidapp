@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements Calculations {
     @Override
     public int [] transaction(int des, int src, int tran) {
         int [] arr = {des,src};
-        if (src>tran) {
+        if (src>=tran && src>1000) {
             arr[0] = des + tran;
             arr[1] = src - tran;
         }

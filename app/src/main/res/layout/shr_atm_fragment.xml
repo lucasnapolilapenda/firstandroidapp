@@ -81,7 +81,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
                     android:layout_below="@id/title_account"
-                    android:text="5000"
+                    android:text="10000"
                     android:textAllCaps="true"
                     android:textSize="45sp"/>
 
@@ -110,7 +110,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
                     android:layout_below="@id/title_hand"
-                    android:text="250"
+                    android:text="1000"
                     android:textAllCaps="true"
                     android:textSize="45sp"/>
         </RelativeLayout>

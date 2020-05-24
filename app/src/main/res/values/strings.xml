@@ -10,6 +10,8 @@
         <item>500</item>
         <item>1000</item>
         <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
     </string-array>
 
     <!-- Shrine backdrop menu labels -->
