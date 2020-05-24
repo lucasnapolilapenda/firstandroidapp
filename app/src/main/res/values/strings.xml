@@ -1,0 +1,24 @@
+<resources>
+    <string name="shr_app_name">MyATM</string>
+    <string name="shr_button_withdraw">Withdraw</string>
+    <string name="shr_button_deposit">Deposit</string>
+    <string name="shr_account_title">Account</string>
+    <string name="shr_hand_title">Money in hand</string>
+    <string name="shr_product_title">Title</string>
+    <string name="shr_product_description">Secondary text</string>
+    <string-array name="transactionAmountChoices">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+    </string-array>
+
+    <!-- Shrine backdrop menu labels -->
+    <string name="shr_featured_label">Featured</string>
+    <string name="shr_apartment_label">Apartment</string>
+    <string name="shr_accessories_label">Accessories</string>
+    <string name="shr_shoes_label">Shoes</string>
+    <string name="shr_tops_label">Tops</string>
+    <string name="shr_bottoms_label">Bottoms</string>
+    <string name="shr_dresses_label">Dresses</string>
+    <string name="shr_account_label">My Account</string>
+</resources>
